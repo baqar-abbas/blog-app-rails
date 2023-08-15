@@ -1,24 +1,181 @@
-# README
+<a name="readme-top"></a>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<div align="center">
 
-Things you may want to cover:
+  <h1><b>Blog_App_Ruby_on_Rails</b></h1>
 
-* Ruby version
+</div>
 
-* System dependencies
+<!-- TABLE OF CONTENTS -->
 
-* Configuration
+# 📗 Table of Contents
 
-* Database creation
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [🚀 Video Presentation ](#video-project-presentation)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-* Database initialization
+<!-- PROJECT DESCRIPTION -->
+# 📖 Blog_App_Rails <a id="about-project"></a>
 
-* How to run the test suite
+The rails-blog-app is a classic example of a blog website. It will be fully up and a functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🛠 Built With <a name="built-with"></a>
 
-* Deployment instructions
+- Ruby
 
-* ...
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li>Ruby</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Test</summary>
+  <ul>
+    <li>RSPEC</li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li>PostgreSQL</li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+-Use database migration files to maintain database schema.
+-Understand ORM and database migrations and their implementation.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need: 
+
+Ruby on Rails installed and running. To get more information, read the installation guide.
+
+PostgreSQL installed and running
+
+### Setup
+
+Clone this [repository]() to your desired folder.
+git@github.com:baqar-abbas/blog-app-rails.git
+
+### Install
+
+bundle install
+
+### Usage
+
+**To run the project follow the following instruction:-**
+  rails server or rails s
+
+### Run tests
+
+To run tests, run the following command: 
+
+Tests will be implemented later on.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Baqar Abbas**
+
+- GitHub: [@Baqar](https://github.com/baqar-abbas)
+- Twitter: [@BaqarAbbas9](https://twitter.com/BaqarAbbas9)
+- LinkedIn: [Baqar Abbas](https://www.linkedin.com/in/baqar-abbas/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+-Processing data in models.
+-Views.
+-Forms
+-Add authorization rules.
+-Integration specs for Views.
+-Add API endpoints.
+-API documentation.
+-Validations and Model specs.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project give a ⭐️.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **Can I use this project?**
+
+  - It's MIT license, feel free to use as you like.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
