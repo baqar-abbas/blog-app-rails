@@ -65,8 +65,12 @@ The rails-blog-app is a classic example of a blog website. It will be fully up a
 
 ### Key Features <a name="key-features"></a>
 
--Use database migration files to maintain database schema.
--Understand ORM and database migrations and their implementation.
+- Use database migration files to maintain database schema.
+- Understand ORM and database migrations and their implementation.
+- Processing data in models
+- Validations and Model specs
+- Setup and controllers
+- Controllers specs
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,14 +127,13 @@ Tests will be implemented later on.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--Processing data in models.
--Views.
--Forms
--Add authorization rules.
--Integration specs for Views.
--Add API endpoints.
--API documentation.
--Validations and Model specs.
+- Views.
+- Forms
+- Add authorization rules.
+- Integration specs for Views.
+- Add API endpoints.
+- API documentation.
+- Validations and Model specs.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
