@@ -1,2 +1,52 @@
-<h1>List All Posts of a User</h1>
-<p>All posts will appear here</p>
+<h1>List Recent Posts of a User</h1>
+
+<main id="posts" class="page">
+<div id="user-page">
+ <div class="btn-container">
+      <%= link_to "Home", root_path %>
+
+
+      <div class="back-link-container">
+        <%= link_to "Back", :back, class: "back-link2" %> 
+    </div> 
+    </div>
+</div>
+
+<div class="user-container posts">
+<div class="image-div">
+ <%= image_tag('user.png', :width => "100px", :heigth=>"100px") %>
+ </div>
+ <div class="userdetails-div">
+<h3><%= @user.name %></h3>
+<p class="posts-counter">Number of posts: <%= @user.posts_counter%></p>
+</div>
+</div>
+<%# End of user profile %>
+
+ <article class="post-article">
+<% @posts.each do |post| %>
+<div class="post-container">
+<h3 class="post-title"><%= link_to post.title, "posts/#{post.id}" %></h3>
+<div class="post-details">
+              <p class="details"><%= post.text[0..100]... %></p>
+            </div>
+ <div class="comment-like-container">
+              <p class="coment-likes-data">
+                Comment: <%= post.comments_counter || 0 %>, Likes: <%= post.likes_counter || 0 %>
+              </p>
+            </div>
+</div>
+<ul class="post-comments-container">
+          <% if post.recent_comments.any? %>
+            <% post.recent_comments.each do |comment| %>
+              <li>
+                <p><%= User.find_by(id: comment.author_id).name %>: <%= comment.Text[0..60] %>...</p>
+              </li>
+            <% end %>
+          <% else %>
+            <li>No comments added yet.</li>
+          <% end %>
+        </ul>
+<%end%>
+ </article>
+</main>
