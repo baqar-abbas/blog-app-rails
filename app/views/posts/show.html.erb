@@ -1,2 +1,40 @@
-<h1>Specific Post of a User</h1>
-<p>Specific post with post id will appear here</p>
+<h1>Selected Post of a User</h1>
+
+<main id="post-index" class="page">
+<div id="user-page">
+ <div class="btn-container">
+      <%= link_to "Home", root_path %>
+
+
+      <div class="back-link-container">
+        <%= link_to "Back", :back, class: "back-link2" %>
+    </div> 
+    </div>
+</div>
+<article class="post-article2">
+ <div class="info">
+          <div>
+            <h2 class="title"><%= @post.title %></h2>
+            <p class="user-name">by <%= @user.name %></p>
+          </div>
+          <p class="posts-counter3">
+            Comment: <%= @post.comments_counter || 0 %>, Likes: <%= @post.likes_counter || 0 %>
+          </div>
+          <div class="post-body">
+            <p><%= @post.text %></p>
+          </div>
+</article>
+  <ul class="post-comments-container">
+          <% if @comments.any?  %>
+            <% @comments.each do |comment| %>
+              <li>
+                <p><%= User.find_by(id: comment.author_id).name %>: <%= comment.Text %></p>
+              </li>
+            <% end %>
+          <% else %>
+            <li>No comments added yet...</li>
+          <% end %>
+        </ul>
+</main>
+
+

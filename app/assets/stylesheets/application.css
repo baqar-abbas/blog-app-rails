@@ -13,3 +13,183 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  background-color: azure;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 2rem;
+  text-align: center;
+  margin: 30px auto;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+main {
+  width: 70%;
+  min-height: 100vh;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-container {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.image-div {
+  border: 2px solid black;
+}
+
+.userdetails-div {
+  border: 2px solid black;
+  width: 100%;
+  padding: 10px;
+}
+
+.posts-counter {
+  position: relative;
+  left: 20%;
+}
+
+.user-id {
+  position: relative;
+  left: 15%;
+}
+
+.back-link {
+  font-size: 18px;
+  position: relative;
+  left: 30%;
+  bottom: 3%;
+  text-decoration: underline;
+  color: rgb(7, 7, 184);
+}
+
+article.user-bio {
+  border: 2px solid black;
+  margin: 20px 0 40px;
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.user-bio h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.user-bio .bio {
+  font-size: 19px;
+}
+
+.post-container {
+  margin-bottom: 20px;
+  border: 2px solid black;
+  padding: 12px 10px;
+}
+
+.post-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.post-details .details {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.coment-likes-data {
+  font-size: 15px;
+  font-weight: normal;
+  display: flex;
+  justify-content: end;
+  color: rgb(65, 64, 64);
+}
+
+.see-posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.see-link {
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.btn-container a {
+  display: block;
+  text-decoration: underline;
+  color: blue;
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.back-link2 {
+  font-size: 18px;
+  text-decoration: underline;
+  color: blue;
+}
+
+.user-container.posts {
+  margin-bottom: 20px;
+}
+
+.post-comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 1px solid rgb(87, 85, 85);
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px 10px;
+}
+
+.post-article2 {
+  border: 2px solid black;
+  padding: 12px 10px;
+}
+
+.user-name {
+  position: relative;
+  left: 15%;
+  margin-bottom: 10px;
+}
+
+.posts-counter3 {
+  position: absolute;
+  left: 73%;
+  top: 26%;
+  margin-bottom: 15px;
+}
+
+.post-body {
+  margin-top: 15px;
+}
