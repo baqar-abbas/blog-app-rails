@@ -1,11 +1,15 @@
 <h1>List all the Users </h1>
+<%# main div %>
 <main id="home" class="page">
   <ul class="users-list">
+<%# Looping through the users %>
 <% @users.each do |user| %>
 <li class="user-container">
+<%# Displaying the image in a div %>
  <div class="image-div">
  <%= image_tag('user.png', :width => "100px", :heigth=>"100px") %>
  </div>
+<%# Displaying the user details in a div %>
 <div class="userdetails-div">
 <h2><%= link_to user.name, "users/#{user.id}", class: "username-link" %></h2>
 <p class="posts-counter">Number of posts: <%= user.posts_counter || 0 %></p>

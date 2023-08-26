@@ -1,6 +1,7 @@
 <h1>List Recent Posts of a User</h1>
-
+<%# Main diV %>
 <main id="posts" class="page">
+<%# Displaying the Home and back button %>
 <div id="user-page">
  <div class="btn-container">
       <%= link_to "Home", root_path %>
@@ -13,16 +14,18 @@
 </div>
 
 <div class="user-container posts">
+<%# Displaying the image in a div %>
 <div class="image-div">
  <%= image_tag('user.png', :width => "100px", :heigth=>"100px") %>
  </div>
+<%# Displaying the user details in a div %>
  <div class="userdetails-div">
 <h3><%= @user.name %></h3>
 <p class="posts-counter">Number of posts: <%= @user.posts_counter%></p>
 </div>
 </div>
 <%# End of user profile %>
-
+<%# Looping through the posts of the user and displaying them %>
  <article class="post-article">
 <% @posts.each do |post| %>
 <div class="post-container">
@@ -36,6 +39,7 @@
               </p>
             </div>
 </div>
+<%# Looping through the comments of the post and displaying them %>
 <ul class="post-comments-container">
           <% if post.recent_comments.any? %>
             <% post.recent_comments.each do |comment| %>

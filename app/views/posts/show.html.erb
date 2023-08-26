@@ -1,6 +1,7 @@
 <h1>Selected Post of a User</h1>
-
+<%# Main div %>
 <main id="post-index" class="page">
+  <%# Displaying the Home and back button %>
 <div id="user-page">
  <div class="btn-container">
       <%= link_to "Home", root_path %>
@@ -11,6 +12,7 @@
     </div> 
     </div>
 </div>
+<%# Looping through the posts of the user and displaying them %>
 <article class="post-article2">
  <div class="info">
           <div>
@@ -24,6 +26,7 @@
             <p><%= @post.text %></p>
           </div>
 </article>
+<%# Looping through the comments of the post and displaying them %>
   <ul class="post-comments-container">
           <% if @comments.any?  %>
             <% @comments.each do |comment| %>
@@ -35,6 +38,9 @@
             <li>No comments added yet...</li>
           <% end %>
         </ul>
+        <%= render partial: 'comments/comment_form', locals: { comment: @comment, user: @user, post: @post } %>
+        <br>
+         <%= render partial: 'likes/like_form', locals: { post: @post } %>
 </main>
 
 
