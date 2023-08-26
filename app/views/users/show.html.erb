@@ -1,6 +1,8 @@
 <h1>User details</h1>
 <h3 class="user-id">User ID: <%= @user.id %></h3>
+<%# Main div %>
 <main id="user-index" class="page">
+<%# Displaying the Home and back button %>
 <div id="user-page">
 <div class="back-link-container">
         <%= link_to "Home", root_path, class: "back-link" %>
@@ -8,19 +10,22 @@
       </div>
       <br>
       <div class="user-container">
+      <%# Displaying the image in a div %>
       <div class="image-div">
 <%= image_tag('user.png',  :width => "100px", :heigth=>"100px") %>
 </div>
+<%# Displaying the user details in a div %>
 <div class="userdetails-div">
 <h3><%= @user.name %></h3>
 <p class="posts-counter">Number of posts: <%= @user.posts_counter%></p>
 </div>
 </div>
+<%# Displaying the user bio in a div %>
 <article class="user-bio">
       <h3>Bio</h3>
       <div class="bio"><%= @user.bio %></div>
     </article>
-
+<%# Looping through the posts of the user and displaying them %>
 <article class="post-article">
 <% @posts.each do |post| %>
 <div class="post-container">
@@ -36,8 +41,10 @@
 </div>
 <%end%>
 </article>
+<%# Link to see all posts and create new post%>
 <div class="see-posts">
         <%= link_to "See all posts", "#{@user.id}/posts", class: "see-link" %>
+        <%= link_to "Create New Post", "#{@user.id}/posts/new", class: "see-link" %>
     </div>
 </div>
 </main>

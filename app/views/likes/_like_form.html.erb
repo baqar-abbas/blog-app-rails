@@ -1,0 +1,9 @@
+<% if @current_user.likes.find_by(post: post) %>
+  <%= form_with(model: @current_user.likes.find_by(post: post), method: :delete, url: user_post_like_path(user_id: post.author_id, post_id: post.id, id: @current_user.likes.find_by(post: post).id)) do |f| %>
+    <%= f.submit "Unlike", class: "like-button" %>
+  <% end %>
+<% else %>
+  <%= form_with(model: Like.new, method: :post, url: user_post_likes_path(user_id: post.author_id, post_id: post.id)) do |f| %>
+    <%= f.submit "Like", class: "like-button" %>
+  <% end %>
+<% end %>

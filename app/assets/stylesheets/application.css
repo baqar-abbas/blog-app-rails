@@ -193,3 +193,65 @@ article.user-bio {
 .post-body {
   margin-top: 15px;
 }
+
+.flash-notice {
+  background-color: #4caf50; /* Green background color */
+  color: blue; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Add some padding */
+  margin-bottom: 20px; /* Add margin to separate from other content */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+/* Styling for the form container */
+.post-form {
+  max-width: 500px;
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for form field labels */
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styling for form input fields and textareas */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Styling for submit button */
+.submit-button {
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.like-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}

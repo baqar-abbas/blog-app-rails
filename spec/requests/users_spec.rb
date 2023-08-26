@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Users', type: :request do
   describe 'GET /index' do
     it 'returns http success' do
-      get '/users/index'
+      get users_path
       expect(response).to have_http_status(:success)
     end
     it 'renders the index template' do
@@ -12,23 +12,23 @@ RSpec.describe 'Users', type: :request do
     end
     it 'includes correct placeholder text in the response body' do
       get users_path
-      expect(response.body).to include('List Users')
+      expect(response.body).to include('List all the Users')
     end
   end
 
   describe 'GET /show' do
     let(:user) { User.create(name: 'Stella', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Rusia.', posts_counter: 0, id: 1) }
     it 'returns http success' do
-      get '/users/show'
+      get "/users/#{user.id}"
       expect(response).to have_http_status(:success)
     end
     it 'renders the show template' do
-      get "/users/id=#{user.id}"
+      get "/users/#{user.id}"
       expect(response).to render_template(:show)
     end
     it 'includes correct placeholder text in the response body' do
-      get "/users/id=#{user.id}"
-      expect(response.body).to include('Specific User details')
+      get "/users/#{user.id}"
+      expect(response.body).to include('User details')
     end
   end
 end
