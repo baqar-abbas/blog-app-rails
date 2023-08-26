@@ -70,6 +70,8 @@ The rails-blog-app is a classic example of a blog website. It will be fully up a
 - Validations and Model specs
 - Setup and controllers
 - Controllers specs
+- Views Added
+- Adding Forms and partials
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,8 +128,6 @@ Tests will be implemented later on.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Views.
-- Forms
 - Add authorization rules.
 - Integration specs for Views.
 - Add API endpoints.
