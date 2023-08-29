@@ -16,7 +16,7 @@
 <div class="user-container posts">
 <%# Displaying the image in a div %>
 <div class="image-div">
- <%= image_tag('user.png', :width => "100px", :heigth=>"100px") %>
+ <%= image_tag('user.png', alt: 'User Profile Picture', :width => "100px", :heigth=>"100px") %>
  </div>
 <%# Displaying the user details in a div %>
  <div class="userdetails-div">
@@ -53,4 +53,8 @@
         </ul>
 <%end%>
  </article>
+ <br>
+ <div class="see-posts">
+        <%= link_to "Pagination", "#", class: "see-link" %>
+    </div>
 </main>

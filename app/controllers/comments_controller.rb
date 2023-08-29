@@ -4,7 +4,6 @@ class CommentsController < ApplicationController
   end
 
   def create
-    Rails.logger.debug(params.inspect)
     @post = Post.find(params[:post_id])
     @comment = @current_user.comments.new(comment_params)
     @comment.post = @post

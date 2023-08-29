@@ -72,6 +72,7 @@ The rails-blog-app is a classic example of a blog website. It will be fully up a
 - Controllers specs
 - Views Added
 - Adding Forms and partials
+- Fix n+1 problem and integration tests added
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,6 +121,11 @@ Tests will be implemented later on.
 - GitHub: [@Baqar](https://github.com/baqar-abbas)
 - Twitter: [@BaqarAbbas9](https://twitter.com/BaqarAbbas9)
 - LinkedIn: [Baqar Abbas](https://www.linkedin.com/in/baqar-abbas/)
+
+👤 **Paul Tesfaye**
+
+- GitHub: [@Paul](https://github.com/Paul-tes)
+- LinkedIn: [Paul Tesfaye ](https://www.linkedin.com/in/paul-tesfaye)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
