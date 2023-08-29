@@ -29,7 +29,7 @@
 <article class="post-article">
 <% @posts.each do |post| %>
 <div class="post-container">
-<h3 class="post-title"><%= post.title %></h3>
+<h3 class="post-title"><%= link_to post.title,  "#{@user.id}/posts/#{post.id}"  %></h3>
 <div class="post-details">
               <p class="details"><%= post.text[0..100]... %></p>
             </div>
