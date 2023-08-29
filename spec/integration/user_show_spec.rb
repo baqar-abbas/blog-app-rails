@@ -49,5 +49,18 @@ visit "/users/#{@user1.id}"
         page.has_content?(@user1.posts)
       end
 
+      it 'should have a link to see all posts' do
+        expect(page.html).to include('See all posts')
+      end
+
+      it 'should have a link to create a new post' do
+        expect(page.html).to include('Create New Post')
+      end
+      
+      it 'should show next_path when clicked on see all posts' do
+        click_on 'See all posts'
+        expect(current_path).to eq(user_posts_path(@user1))
+      end
+
     end
 end
