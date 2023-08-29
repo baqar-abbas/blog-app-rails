@@ -31,6 +31,23 @@ visit "/users/#{@user1.id}"
     it 'should show posts_counter for user' do
         expect(page).to have_content(@user1.posts_counter)
     end
-  
+
+    it "I can see the user's first 3 posts." do
+        Post.create(
+          [
+            {
+              author: @user1, title: 'First Post', text: 'My first post'
+            },
+            {
+              author: @user1, title: 'Second Post', text: 'My Second post'
+            },
+            {
+              author: @user1, title: 'Third Post', text: 'My Third post'
+            }
+          ]
+        )
+        page.has_content?(@user1.posts)
+      end
+
     end
 end
