@@ -29,7 +29,28 @@ RSpec.describe 'Post Index Page', type: :feature do
           it 'should show post text' do
             expect(page).to have_content(@first_post.text)
           end
+          
+          it 'should show comment text' do
+            expect(page).to have_content(@comment1.Text)
+          end
 
+          it 'should show comments counter' do
+            expect(page).to have_content(@first_post.comments_counter)
+          end
+
+          it 'should show likes counter' do
+            expect(page).to have_content(@first_post.likes_counter)
+          end
+
+          it 'should show a button for pagination if there are more posts than fit on the view.' do
+            visit user_posts_path(@user1.id)
+            expect(page).to have_link('Pagination')
+          end
+
+          it 'should redirect to post show page when clicking on post.' do
+            click_link @first_post.title
+            expect(page).to have_current_path(user_post_path(@user1, @first_post))
+          end
           
     end
 end
