@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     # @posts = Post.where(author_id: user_id)
     # @comments = Comment.all
     @user = User.find(params[:user_id])
-    user_id = params[:user_id]
+    params[:user_id]
     @posts = Post.where(author_id: @user.id).includes(:comments)
   end
 
