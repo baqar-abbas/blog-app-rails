@@ -17,6 +17,7 @@
         <p><%= flash[:notice] %></p>
       <% end %>
     </div>
+    <%# Conditional links rendering based on user login status %>
     <div class="devise-options">
     <% if user_signed_in? %>
     Logged in as <strong class="logged-email"><%= current_user.email %></strong>
