@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
   before_validation :set_default_posts_counter, on: :create
 
-  devise :database_authenticatable, :registerable,
+  devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :validatable
   has_many :posts, foreign_key: :author_id
   has_many :comments, foreign_key: :author_id
