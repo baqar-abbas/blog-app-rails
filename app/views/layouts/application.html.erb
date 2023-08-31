@@ -17,6 +17,18 @@
         <p><%= flash[:notice] %></p>
       <% end %>
     </div>
+    <%# Conditional links rendering based on user login status %>
+    <div class="devise-options">
+    <% if user_signed_in? %>
+    Logged in as <strong class="logged-email"><%= current_user.email %></strong>
+    <%= link_to 'Edit profile', edit_user_registration_path, class: "edit-button" %> 
+    <%= button_to "logout", destroy_user_session_path, method: :delete, class: "logout-button" %>
+    <% else %>
+    <%= link_to "Sign up", new_user_registration_path, class: "edit-button" %> 
+    <%= link_to "Login", new_user_session_path, class: "edit-button" %>
+    <% end %>
+    </div>
+    <br/>
     <%= yield %>
   </body>
 </html>
