@@ -256,3 +256,91 @@ article.user-bio {
   cursor: pointer;
 }
 
+.log-in {
+  text-align: center;
+}
+
+.field {
+  width: 70%;
+  margin-left: 41%;
+}
+
+.actions {
+  width: 70%;
+  margin-left: 41%;
+}
+
+.signup {
+  width: 70%;
+  margin-left: 41%;
+}
+
+.login-field {
+  width: 30%;
+  padding: 10px;
+}
+
+.login-button {
+  background-color: #007bff; /* Blue color */
+  width: 30%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-up {
+  text-align: center;
+}
+
+.devise-options {
+  display: flex; 
+  /* justify-content: end; */
+  margin-bottom: 20px;
+  margin-left: 5px;
+  width: 70%;
+}
+
+.logged-email {
+  margin-left: 5px;
+}
+
+/* .edit-button {
+  background-color: #007bff; 
+  width: 15%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+
+.logout-button {
+  background-color: #007bff; 
+  width: 30%;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+} */
+
+.edit-button {
+  padding: 10px;
+  border: 2px solid black;
+  margin-left: 5px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.logout-button {
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
+  margin-left: 2px;
+}
