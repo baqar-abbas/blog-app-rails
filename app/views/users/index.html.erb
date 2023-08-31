@@ -1,6 +1,11 @@
 <h1>List all the Users </h1>
 <%# main div %>
+<%# <div class="back-link-container">
+        <%= current_user %>
+        <%# <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "back-link" %> 
+      <%# </div> %>
 <main id="home" class="page">
+
   <ul class="users-list">
 <%# Looping through the users %>
 <% @users.each do |user| %>

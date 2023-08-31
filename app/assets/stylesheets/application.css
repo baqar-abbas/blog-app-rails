@@ -185,8 +185,8 @@ article.user-bio {
 
 .posts-counter3 {
   position: absolute;
-  left: 73%;
-  top: 26%;
+  left: 72%;
+  top: 48%;
   margin-bottom: 15px;
 }
 
@@ -255,3 +255,4 @@ article.user-bio {
   border: none;
   cursor: pointer;
 }
+
