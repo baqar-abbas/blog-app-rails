@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!
   def index
     @user = User.find(params[:user_id])
     params[:user_id]
@@ -23,6 +24,19 @@ class PostsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    authorize! :destroy, @post # Check authorization using CanCanCan
+
+    if @post.destroy
+      flash[:notice] = 'Post deleted successfully.'
+    else
+      flash[:alert] = 'Failed to delete the post.'
+    end
+
+    redirect_to root_path
   end
 
   private
