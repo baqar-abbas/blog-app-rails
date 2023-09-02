@@ -321,3 +321,35 @@ article.user-bio {
   box-shadow: 2px 2px 2px black;
   margin-left: 2px;
 }
+
+.btn-danger {
+  background-color: #dc3545; /* Red background color */
+  color: #fff; /* White text color */
+  border-color: #dc3545; /* Red border color */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer;
+  padding: 2px 4px;
+  margin-top: 2px;
+}
+
+/* Style for the button when it's hovered over */
+.btn-danger:hover {
+  background-color: #c82333; /* Slightly darker red on hover */
+  border-color: #bd2130; /* Slightly darker red border on hover */
+}
+
+.btn {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border-color: #007bff; /* Blue border color */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer;
+  padding: 3px 6px;
+  margin-top: 2px;
+}
+
+/* Style for the button when it's hovered over */
+.btn:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+  border-color: #0056b3; /* Slightly darker blue border on hover */
+}

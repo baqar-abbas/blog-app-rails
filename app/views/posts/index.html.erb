@@ -33,6 +33,10 @@
 <div class="post-details">
               <p class="details"><%= post.text[0..100]... %></p>
             </div>
+            <% if can? :destroy, post %>
+  <%= button_to "Delete", user_post_path(user_id: post.author_id, id: post.id), method: :delete, data: { confirm: "Are you sure you want to delete this post?" }, class: "btn" %>
+<% end %>
+
  <div class="comment-like-container">
               <p class="coment-likes-data">
                 Comment: <%= post.comments_counter || 0 %>, Likes: <%= post.likes_counter || 0 %>
@@ -45,6 +49,9 @@
             <% post.recent_comments.each do |comment| %>
               <li>
                 <p><%= User.find_by(id: comment.author_id).name %>: <%= comment.Text[0..60] %>...</p>
+                <% if can? :destroy, comment %>
+  <%= button_to "Delete Comment", user_post_comment_path(user_id: post.author_id, post_id: post.id, id: comment.id), method: :delete, data: { confirm: "Are you sure you want to delete this comment?" }, class: "btn-danger" %>
+<% end %>
               </li>
             <% end %>
           <% else %>
